@@ -1,4 +1,3 @@
-<div align="center">
 <h1> Alpha-Free Matting</h1>
 <h3> Training Matting Models without Alpha Labels</h3>
 
