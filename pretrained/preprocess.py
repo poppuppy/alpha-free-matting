@@ -4,12 +4,13 @@ import wget
 def preprocess(model, name='dino', embed_dim=384):
     new_model = {}
     for k in model.keys():
-        if 'patch_embed.proj.weight' in k:
-            x = torch.zeros(embed_dim, 4, 16, 16)
-            x[:, :3] = model[k]
-            new_model['backbone.'+k] = x
-        else:
-            new_model['backbone.'+k] = model[k]
+        # if 'patch_embed.proj.weight' in k:
+        #     x = torch.zeros(embed_dim, 4, 16, 16)
+        #     x[:, :3] = model[k]
+        #     new_model['backbone.'+k] = x
+        # else:
+        #     new_model['backbone.'+k] = model[k]
+        new_model['backbone.'+k] = model[k]
     if embed_dim==384:
         size='s'
     else:
