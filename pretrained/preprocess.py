@@ -15,7 +15,7 @@ def preprocess(model, name='dino', embed_dim=384):
         size='s'
     else:
         size='b'
-    torch.save(new_model, name+'_vit_'+ size + '_fna.pth')
+    torch.save(new_model, name+'_vit_'+ size + '_fna_3_channels.pth')
 
 if __name__ == "__main__":
 
