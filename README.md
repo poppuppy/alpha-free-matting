@@ -12,7 +12,7 @@ The labeling difficulty has been a longstanding problem in deep image matting. T
 
 ## Get Started
 
-* Install [ViTMatte](https://github.com/hustvl/ViTMatte). (Warning: different from VitMatte, the input (image only, without trimap) to our model contains 3 channels. Therefore the preprocess.py is slightly different.)
+* Install [ViTMatte](https://github.com/hustvl/ViTMatte). (Warning: different from ViTMatte, the input (image only, without trimap) of our model contains 3 channels. Therefore the pretrained/preprocess.py is slightly different.)
 * Prepare the dataset, e.g., [AM-2K](https://github.com/JizhiziLi/GFM), and generate the trimaps using
 
 ```
